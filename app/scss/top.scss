@@ -1,0 +1,150 @@
+.top{
+   
+    height: 985px;
+    width: 100%;
+
+    background-image: url('../images/top-bg.jpg');
+
+    background-image: image-set(
+    url("../images/top-bg.avif") type("image/avif"),
+    url("/app/images/top-bg.webp") type("imame/webp")
+    );
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+
+    h1{
+        font-size: 50px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 150%;
+        color: #FDFDFD;
+        text-transform: uppercase;
+        margin-bottom: 41px;
+    }
+
+    &__inner{
+        display: flex;
+        height: 985px;
+        padding-bottom: 82px;
+    }
+
+    &__block{
+        margin-top: auto;
+    }
+
+    &-form{
+        padding: 40px 43px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(3px);
+        display: flex;
+        gap: 0 24px;
+        align-items: center;
+       
+    }
+
+
+    
+    .dropdown__button{
+        padding: 14px 16px;
+        color: #FDFDFD;
+        font-size: 16px;
+        line-height: 150%;
+        font-weight: 700;
+        border: 1px solid #E1E3E4;
+        position: relative;
+        width: 270px;
+        border-radius: 8px;
+        text-align: left;
+        
+    }
+
+    .dropdown__button::after{
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-image: url('../images/arrow-down.svg');
+        top: 50%;
+        right: 16px;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+
+    .dropdown{
+        position: relative;
+        
+        &__input-hidden{
+            display: none;
+        }
+        &__text{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 150%;
+            color: #FDFDFD;
+            padding: 0 8px;
+            margin-top: 8px;
+        }
+
+    
+    }
+
+    .dropdown__list{
+        display: none;
+        position: absolute;
+        background-color: #FDFDFD;
+        overflow: hidden;
+        width: 270px;
+        left: 0;
+        top: 47px;
+        z-index: 1;
+
+        &--visible{
+            display: block;
+        }
+
+        &-item{
+            color: #1A3E3E;
+            padding: 16px;
+            cursor: pointer;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    .input__box{
+        border: 1px solid #E1E3E4;
+        width: 270px;
+        display: flex;
+        border-radius: 8px;
+    }
+
+    .input{
+        background-color: transparent;
+        border: none;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 16px;
+        color: #FDFDFD;
+        padding: 0 8px;
+        font-weight: 700;
+        height: 52px;
+    }
+
+    .input::-webkit-calendar-picker-indicator {
+        filter: invert(1);
+    }
+
+
+    .form__btn{
+        font-size: 16px;
+        font-weight: 700;
+        color: #1A3E3E;
+        padding: 16px 36px;
+        background-color: #FDFDFD;
+        border-radius:4px ;
+        align-self: flex-start;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+}

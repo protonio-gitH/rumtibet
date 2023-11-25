@@ -1,0 +1,36 @@
+.header{
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu{
+        display: flex;
+        align-items: center;
+        &__list{
+            display: flex;
+            gap: 0 24px
+        }
+
+        &__item{
+            color: #FDFDFD;
+            font-weight: 600;
+            line-height: normal;
+        }
+        &-link{
+            color: #FDFDFD;
+            padding: 12px 24px;
+            font-size: 16px;
+            line-height: 20px;
+            border-radius: 4px;
+            background: #1A3E3E;
+            margin-left: 49px;
+        }
+
+    }
+}

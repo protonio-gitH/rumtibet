@@ -1,0 +1,137 @@
+.popular{
+    padding: 80px 0 100px;
+    
+    .star-icon{
+        width: 24px;
+        height: 24px;
+    }
+
+    &__descr{
+        text-align: center;
+    }
+
+    &__title{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    &__item{
+        position: relative;
+        max-width: 380px;
+        
+        
+        &-img{
+            width: 100%;
+            border-radius:32px ;
+        }
+
+        &:hover,&:focus{
+            .description__block{
+                top: 0;
+            }
+        }
+    }
+
+    &-link{
+        font-size: 16px;
+        color: #FDFDFD;
+        padding: 16px 36px;
+        border-radius: 4px;
+        background-color: #1A3E3E;
+        display: block;
+        max-width: 244px;
+        margin: 50px auto 0;
+    }
+
+    .rating{
+        position: absolute;
+        padding: 4px 8px;
+        top: 50px;
+        right: 0;
+        display: flex;
+        align-items: center;
+        gap: 0 4px;
+        border-radius: 4px 0px 0px 4px;
+        background: rgba(253, 253, 253, 0.40);
+
+        backdrop-filter: blur(2px);
+        
+
+        &__number{
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 18px;
+            color: #1A3E3E;
+        }
+    }
+
+    .description{
+        
+
+        &__block{
+            padding: 30px 32px 20px;
+            position: absolute;
+            top: 80%;
+            transition: all 2s ease-in-out;
+            border-radius: 32px;
+            background: rgba(255, 255, 255, 0.20);
+            backdrop-filter: blur(3px);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__title{
+            font-size: 24px;
+            color: #FDFDFD;
+            font-weight: 700;
+            line-height: 120%;
+
+        }
+
+        &__descr{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            color: #FDFDFD;
+            
+        }
+        &__top{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 38px;
+        }
+
+        &__price{
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+            color: #FDFDFD;
+            padding: 8px 16px;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.30);
+        }
+
+        &__about{
+            color: #FDFDFD;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 150%;
+        }
+
+        &__link{
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: 0.192px;
+            color: #FDFDFD;
+            padding: 12px 24px;
+            border-radius: 4px;
+            background: #1A3E3E;
+            display: inline-block;
+            margin-top: auto;
+            max-width: 176px;
+        }
+    }
+}

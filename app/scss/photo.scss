@@ -1,10 +1,20 @@
 .photo{
-    padding: 80px 0 100px;
+    padding: 80px 0 0;
+    position: relative;
 
     &__list{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px 20px;
+        display: grid;
+        grid-auto-rows: 3fr;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 20px;
+        
+        // display: flex;
+        
+    }
+
+    .swiper3{
+        overflow: hidden;
+        
     }
 
     &__descr{
@@ -32,10 +42,13 @@
     
     &__item{
         position: relative;
+        
     
         &-img{
             width: 100%;  
-            
+            // width: 280px;
+            // height: 250px;
+            // object-fit: cover;
             
         }
         
@@ -46,6 +59,29 @@
         }
 
        
+    }
+
+    &__item:nth-child(1){
+        grid-column: 6 span;
+    }
+
+    &__item:nth-child(2){
+        grid-column: 3 span;
+    }
+    &__item:nth-child(3){
+        grid-column: 3 span;
+    }
+
+    &__item:nth-child(4){
+        grid-column: 3 span;
+    }
+
+    &__item:nth-child(5){
+        grid-column: 6 span;
+    }
+
+    &__item:nth-child(6){
+        grid-column: 3 span;
     }
 
     &__item:hover{
@@ -66,10 +102,15 @@
             width: 18px;
             height: 18px;
             background-image: url(../images/gallery-look.svg);
+            // background-image: url('../images/sprite/sprite/sprite.svg#gallery-look');
             top: 50%;
             left: 50%;
         }
 
     }
+
+    // .photo__item-overlay{
+    //     display: none;
+    // }
 
 }

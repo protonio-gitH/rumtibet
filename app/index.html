@@ -8,12 +8,12 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.min.css">
     <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
     />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.min.css">
     
 </head>
 <body>
@@ -294,13 +294,13 @@
 
             <div class="offer__photos">
 
-                <img src="../../images/photo-1.webp" alt="">
+                <img src="../../images/offer-1.webp" alt="">
 
-                <img src="../../images/photo-2.webp" alt="">
+                <img src="../../images/offer-2.webp" alt="">
 
-                <img src="../../images/photo-3.webp" alt="">
+                <img src="../../images/offer-3.webp" alt="">
 
-                <img src="../../images/photo-4.webp" alt="">
+                <img src="../../images/offer-4.webp" alt="">
 
             </div>
 
@@ -486,7 +486,7 @@
 
             <h2 class="blog__title section-title">Блог о путешествиях</h2>
 
-            <div class="blog__list-wrapper swiper">
+            <div class="blog__list-wrapper swiper2">
 
                 <ul class="blog__list swiper-wrapper">
 
@@ -664,59 +664,101 @@
 
             <h2 class="photo__title section-title">Делимся впечатлениями</h2>
 
-            <ul class="photo__list">
+            <div class="photo__list-wrapper swiper3">
 
-                <li class="photo__item">
+                <ul class="photo__list swiper-wrapper">
 
-                    <img class="photo__item-img" src="../../images/photo-1.avif" alt="">
+                    <li class="photo__item swiper-slide">
 
-                    <button class="photo__item-overlay" data-fancybox="gallery" data-src="../../images/photo-1.avif"></button>
+                        <img class="photo__item-img" src="../../images/photo-1.avif" alt="">
 
-                </li>
+                        <button class="photo__item-overlay" data-fancybox="gallery" data-src="../../images/photo-1.avif"></button>
 
-                <li class="photo__item">
+                    </li>
 
-                    <img class="photo__item-img" src="../../images/photo-2.avif" alt="">
+                    <li class="photo__item swiper-slide">
 
-                    <button class="photo__item-overlay" data-fancybox="gallery" data-src="../../images/photo-2.avif"></button>
+                        <img class="photo__item-img" src="../../images/photo-2.avif" alt="">
 
-                </li>
+                        <button class="photo__item-overlay" data-fancybox="gallery" data-src="../../images/photo-2.avif"></button>
 
-                <li class="photo__item">
+                    </li>
 
-                    <img class="photo__item-img" src="../../images/photo-3.avif" alt="">
+                    <li class="photo__item swiper-slide">
 
-                    <button class="photo__item-overlay" data-fancybox="gallery" data-src="../../images/photo-3.avif"></button>
+                        <img class="photo__item-img" src="../../images/photo-3.avif" alt="">
 
-                </li>
+                        <button class="photo__item-overlay" data-fancybox="gallery" data-src="../../images/photo-3.avif"></button>
 
-                <li class="photo__item">
+                    </li>
 
-                    <img class="photo__item-img" src="../../images/photo-4.avif" alt="">
+                    <li class="photo__item swiper-slide">
 
-                    <button class="photo__item-overlay" data-fancybox="gallery" data-src="../../images/photo-4.avif"></button>
+                        <img class="photo__item-img" src="../../images/photo-4.avif" alt="">
 
-                </li>
+                        <button class="photo__item-overlay" data-fancybox="gallery" data-src="../../images/photo-4.avif"></button>
 
-                <li class="photo__item">
+                    </li>
 
-                    <img class="photo__item-img" src="../../images/photo-5.avif" alt="">
+                    <li class="photo__item swiper-slide">
 
-                    <button class="photo__item-overlay" data-fancybox="gallery" data-src="../../images/photo-5.avif"></button>
+                        <img class="photo__item-img" src="../../images/photo-5.avif" alt="">
 
-                </li>
+                        <button class="photo__item-overlay" data-fancybox="gallery" data-src="../../images/photo-5.avif"></button>
 
-                <li class="photo__item">
+                    </li>
 
-                    <img class="photo__item-img" src="../../images/photo-6.avif" alt="">
+                    <li class="photo__item swiper-slide">
 
-                    <button class="photo__item-overlay" data-fancybox="gallery" data-src="../../images/photo-6.avif"></button>
+                        <img class="photo__item-img" src="../../images/photo-6.avif" alt="">
 
-                </li>
+                        <button class="photo__item-overlay" data-fancybox="gallery" data-src="../../images/photo-6.avif"></button>
 
-            </ul>
+                    </li>
+
+                </ul>
+
+            </div>
 
             <a href="#" class="photo-link">Наш pinterest</a>
+
+        </div>
+
+
+
+        <div class="form-news">
+
+            <div class="form-news__inner">
+
+                <div class="form-news__block">
+
+                    <p class="form-news__descr descr">актуально</p>
+
+                    <h2 class="form-news__title section-title">
+
+                        Получайте полезные рассылки о путешествиях
+
+                    </h2>
+
+                </div>
+
+                <form class="form">
+
+                    <p class="input__title">Введите e-mail адрес</p>
+
+                    <input class="input" type="text" placeholder="name@domain.com">
+
+                    <button class="input__btn" type="submit">Подписаться на новости</button>
+
+                    <p class="personal__text">
+
+                        подписываясь на новости, вы автоматически соглашаетесь с <a href="#">условиями обработки персональных данных</a> и <a href="#">правилами рекламных рассылок</a>
+
+                    </p>
+
+                </form>
+
+            </div>
 
         </div>
 
@@ -726,15 +768,253 @@
 
 </main>
 
-<footer>
+<footer class="footer">
 
-    footer
+    <div class="footer__top">
+
+    <div class="container">
+
+        <div class="footer__inner">
+
+            <div class="footer__column footer__column-one">
+
+               <h3 class="footer__column-title">
+
+                    Компания «РумТибет»
+
+               </h3>
+
+               <p class="footer__column-text">
+
+                Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney.
+
+               </p>
+
+               <div class="footer__column-bottom">
+
+                    <div class="footer__bottom-block">
+
+                        <a class="footer__column-link" href="mailto:info@domain.com">info@domain.com</a>
+
+                        <a class="footer__column-link" href="tel:+7 (123) 456-78-90">+7 (123) 456-78-90</a>
+
+                    </div>
+
+                    <div class="footer__bottom-block">
+
+                        <a class="footer__link" href="#">
+
+                            <svg class="footer-icon" width="32" height="32">
+
+                                <use href="../images/sprite/sprite/sprite.svg#telegram"></use>
+
+                            </svg>
+
+                        </a>
+
+                        <a class="footer__link" href="#">
+
+                            <svg class="footer-icon" width="32" height="32">
+
+                                <use href="../images/sprite/sprite/sprite.svg#vk"></use>
+
+                            </svg>
+
+                        </a>
+
+                        <a class="footer__link" href="#">
+
+                            <svg class="footer-icon" width="32" height="32">
+
+                                <use href="../images/sprite/sprite/sprite.svg#pinterest"></use>
+
+                            </svg>
+
+                        </a>
+
+                        <a class="footer__link" href="#">
+
+                            <svg class="footer-icon" width="32" height="32">
+
+                                <use href="../images/sprite/sprite/sprite.svg#skype"></use>
+
+                            </svg>
+
+                        </a>
+
+                    </div>
+
+               </div>
+
+            </div>
+
+            <div class="footer__column footer__column-two">
+
+                <ul class="footer__list">
+
+                    <li class="footer__item">
+
+                        <h3 class="footer__column-title">
+
+                            Наши услуги
+
+                        </h3>
+
+                    </li>
+
+                    <li class="footer__item">
+
+                        <a class="footer__item-link" href="#">
+
+                            Прогулки в горы летом
+
+                        </a>
+
+                    </li>
+
+                    <li class="footer__item">
+
+                        <a class="footer__item-link" href="#">
+
+                            Зимние походы в горы
+
+                        </a>
+
+                    </li>
+
+                    <li class="footer__item">
+
+                        <a class="footer__item-link" href="#">
+
+                            Посещение храмов в горах
+
+                        </a>
+
+                    </li>
+
+                    <li class="footer__item">
+
+                        <a class="footer__item-link" href="#">
+
+                            Экстремальные виды туризма
+
+                        </a>
+
+                    </li>
+
+                    <li class="footer__item footer__item-new">
+
+                        <a class="footer__item-link" href="#">
+
+                            Походы в джунглях Амазонии
+
+                        </a>
+
+                    </li>
+
+                    <li class="footer__item">
+
+                        <a class="footer__item-link" href="#">
+
+                            Поездка в Африку
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer__column footer__column-three">
+
+                <ul class="footer__list">
+
+                    <li class="footer__item">
+
+                        <h3 class="footer__column-title">
+
+                            Важно для путешествий
+
+                        </h3>
+
+                    </li>
+
+                    <li class="footer__item">
+
+                        <a class="footer__item-link" href="#">
+
+                            Как собрать в долгий поход?
+
+                        </a>
+
+                    </li>
+
+                    <li class="footer__item">
+
+                        <a class="footer__item-link" href="#">
+
+                            Жизненно важные предметы для похода
+
+                        </a>
+
+                    </li>
+
+                    <li class="footer__item">
+
+                        <a class="footer__item-link" href="#">
+
+                            Медицинская страховка, гарантии безопасности
+
+                        </a>
+
+                    </li>
+
+                    <li class="footer__item">
+
+                        <a class="footer__item-link" href="#">
+
+                            Если вы врач - загляните сюда
+
+                        </a>
+
+                    </li>
+
+                    
+
+                </ul>
+
+            </div>
+
+        </div>    
+
+    </div>    
+
+</div>
+
+<div class="footer__bottom">
+
+    <div class="container">
+
+        <div class="footer__bottom-inner">
+
+            <p class="footer__bottom-name">ИП Константинопольский К.К., 2023</p>
+
+            <p class="footer__bottom-personal"><a href="#">Политика обработки персональных данных</a></p>
+
+        </div>
+
+    </div>
+
+</div>
 
 </footer>
 
 
 
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs"></script> -->
 
 <script type="module" src="js/main.min.js"></script>
 
@@ -743,4 +1023,12 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+  
     

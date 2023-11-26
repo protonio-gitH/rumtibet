@@ -6,6 +6,11 @@
         height: 24px;
     }
 
+    &__list{
+        display: flex;
+        gap: 20px;
+    }
+
     &__descr{
         text-align: center;
     }

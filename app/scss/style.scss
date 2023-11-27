@@ -47,6 +47,23 @@ button{
     margin-bottom: 8px;
 }
 
+@media (max-width:1216px){
+    .descr{
+        color: #F2BE22;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        margin-bottom: 8px;
+    }
+
+    .section-title{
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 120%;
+        color: #18121E;
+    }
+}
+
 
 
 

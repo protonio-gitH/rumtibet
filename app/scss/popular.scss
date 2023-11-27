@@ -1,5 +1,9 @@
 .popular{
     padding: 80px 0 100px;
+
+    .swiper-slide{
+        flex-shrink: 1;
+    }    
     
     .star-icon{
         width: 24px;
@@ -137,6 +141,105 @@
             display: inline-block;
             margin-top: auto;
             max-width: 176px;
+        }
+    }
+}
+
+
+@media (max-width:1216px){
+    .popular{
+        padding: 50px 0;
+
+        &__descr{
+            text-align: left;
+        }
+
+        &__title{
+            text-align: left;
+        }
+
+
+        .description{
+
+
+            &__block{
+                padding: 18px 14px 24px;
+            }
+
+            &__title{
+                font-size: 18px;
+            }
+
+            &__descr{
+                display: none;
+            }
+
+            &__about{
+                font-size: 14px;
+            }
+
+            &__price{
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:950px){
+    .popular{
+
+
+        &__item{
+            &:hover,&:focus{
+                .description__block{
+                    top: 80%;
+                }
+            }
+        }
+
+
+        .description{
+
+
+            &__block{
+                padding: 18px 14px 24px;
+            }
+
+            &__title{
+                font-size: 16px;
+            }
+
+            &__descr{
+                display: none;
+            }
+
+            &__about{
+                font-size: 14px;
+            }
+
+            &__price{
+                font-size: 16px;
+                padding: 6px 12px;
+            }
+        }
+    }
+}
+
+
+@media(max-width:769px){
+    .popular{
+        .swiper-slide{
+            flex-shrink: 0;
+        }
+
+        &__item{
+            max-width: 285px;
+        }
+
+        &__list{
+            gap: 0;
         }
     }
 }

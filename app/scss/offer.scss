@@ -92,6 +92,55 @@
         
     }
 
-    
-    
+   
+}
+
+@media (max-width:1216px){
+    .offer{
+
+        padding: 50px 0;
+        
+        &__descr{
+            text-align: left;
+        }
+
+        &__title{
+            text-align: left;
+        }
+    }
+}
+
+
+
+@media (max-width:1150px){
+    .offer{
+        
+
+        &__wrapper{
+            margin: 0 auto;
+        }
+
+        &__photos{
+            display: none;
+        }
+
+        &__item{
+            margin-bottom: 32px;
+
+            &:last-child{
+                margin-bottom: 32px;
+            }
+        }
+
+        &-link{
+            display: block;
+            max-width: 212px;
+            padding: 12px 24px;
+            margin: 0 auto;
+        }
+
+        &__title{
+            margin-bottom: 32px;
+        }
+    }
 }

@@ -114,3 +114,50 @@
     // }
 
 }
+
+
+@media (max-width:1216px){
+    .photo{
+        padding: 50px 0;
+
+        &__descr{
+            text-align: left;
+        }
+
+        &__title{
+            text-align: left;
+        }
+
+        &-link{
+            margin-bottom: 50px;
+        }
+    }
+}
+
+
+@media (max-width:769px){
+    .photo{
+
+        .swiper-slide{
+            flex-shrink: 1;
+        }
+
+        &__item{
+            
+            &-img{
+                width: 280px;
+                height: 250px;
+                object-fit: cover;
+            }
+
+            &-overlay{
+                display: none;
+            }
+        }
+        
+        &__list{
+            display: flex;
+            gap:0;
+        }
+    }
+}

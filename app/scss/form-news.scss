@@ -77,3 +77,34 @@
         }
     }
 }
+
+@media (max-width:1216px){
+    .form-news{
+
+        bottom: 0;
+
+        &__block{
+            margin-bottom: 18px;
+        }
+
+        &__inner{
+            flex-wrap: wrap;
+            
+            
+            
+        }
+
+        .input{
+            margin-bottom: 16px;
+        }
+    }
+}
+
+@media (max-width:850px){
+    .form-news{
+        padding: 24px;
+       .input__btn{
+        margin-bottom: 24px;
+       }
+    }
+}

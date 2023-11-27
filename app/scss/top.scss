@@ -32,6 +32,19 @@
 
     &__block{
         margin-top: auto;
+        
+
+        &-link{
+            font-size: 16px;
+            color: #1A3E3E;
+            font-weight: 700;
+            line-height: 20px;
+            letter-spacing: 0.192px;
+            padding: 16px 36px;
+            border-radius: 4px;
+            background: #FDFDFD;
+            display: none;
+        }
     }
 
     &-form{
@@ -146,5 +159,47 @@
         border-radius:4px ;
         align-self: flex-start;
         font-family: 'Nunito Sans', sans-serif;
+    }
+}
+
+
+@media (max-width:1216px){
+    .top{
+
+        h1{
+            margin-bottom: 32px;
+        }
+        &-form{
+            display: none;
+        }
+
+        &__block{
+            margin-top: 300px;
+
+            &-link{
+                display: inline-block;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:768px){
+    .top{
+        height: 600px;
+
+        &__inner{
+            height: 600px;
+        }
+
+        h1{
+            font-size: 26px;
+        }
+
+
+        &__block{
+            margin-top: auto;
+        }
     }
 }
